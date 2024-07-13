@@ -7,7 +7,7 @@
 
 ## 下载MCSL2  
 
-1. 点击 [这里](/download) 下载最新版本的MCSL2。
+1. 点击 [这里](/mcsl2/download) 下载最新版本的MCSL2。
 2. 下载压缩包解压后，双击 `MCSL2.exe` (Windows平台) 或 `MCSL2.bin` (Linux/Mac平台) 启动程序。
 
 ::: details Linux/Mac 版无法启动？

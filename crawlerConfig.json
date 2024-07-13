@@ -1,7 +1,7 @@
 {
   "index_name": "mcsl",
   "start_urls": [
-    "https://mcsl.com.cn/"
+    "https://mcsl.com.cn/mcsl2/"
   ],
   "rateLimit": 8,
   "maxDepth": 10,

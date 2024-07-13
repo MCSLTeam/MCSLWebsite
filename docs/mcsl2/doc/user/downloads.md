@@ -3,7 +3,7 @@
 当前 MCSL2 已接入了 4 个镜像站点，分别为：  
 
 - [无极镜像 (FastMirror)](https://fastmirror.net/)  
-- [MCSLAPI](/doc/dev/downloads#使用-mcslapi)  
+- [MCSLAPI](/mcsl2/doc/dev/downloads#使用-mcslapi)  
 - [极星 · 镜像站 (Polars)](https://mirror.polars.cc/)  
 - [阿基拉云镜像站 (Akira)](https://mirror.akiracloud.net/)  
 

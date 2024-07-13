@@ -83,4 +83,4 @@
 
 ### 2nd
 
-[点此查看续作!](fuckFLSQ_2nd)
+[点此查看续作!](/mcsl2/flsq/fuckFLSQ_2nd)

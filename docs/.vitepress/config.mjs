@@ -18,7 +18,7 @@ export default defineConfig({
   },
   cleanUrls: true,
   sitemap: {
-    hostname: 'https://mcsl.com.cn'
+    hostname: 'https://mcsl.com.cn/mcsl2'
   },
   enhanceApp({ app }) {
     loadClarityTag();
@@ -26,7 +26,7 @@ export default defineConfig({
   vite: {
     server: {
       proxy: {
-        "/api": {
+        "/mcsl2/api": {
           target: "https://api.mcsl.com.cn",
           changeOrigin: true,
           rewrite: (path) => path.replace(/^\/api/, ""),
@@ -41,227 +41,227 @@ export default defineConfig({
     },
     logo: "https://img.fastmirror.net/s/2023/12/03/656c4416b04b8.png",
     nav: [
-      { text: '主页', link: '/' },
-      { text: '下载', link: '/download' },
-      { text: '文档', link: '/doc/' },
-      { text: '更新日志', link: '/update-log/' },
-      { text: '鸣谢', link: '/acknowledgements' },
-      { text: '相关链接', link: '/links/' },
-      { text: '永久乐子', link: '/joker' }
+      { text: '主页', link: '/mcsl2/' },
+      { text: '下载', link: '/mcsl2/download' },
+      { text: '文档', link: '/mcsl2/doc/' },
+      { text: '更新日志', link: '/mcsl2/update-log/' },
+      { text: '鸣谢', link: '/mcsl2/acknowledgements' },
+      { text: '相关链接', link: '/mcsl2/links/' },
+      { text: '永久乐子', link: '/mcsl2/joker' }
     ],
     sidebar: [
       {
         text: '下载',
-        link: '/download',
+        link: '/mcsl2/download',
       },
       {
         text: '参加内测',
-        link: '/join-preview',
+        link: '/mcsl2/join-preview',
       },
       {
         text: '鸣谢',
-        link: '/acknowledgements',
+        link: '/mcsl2/acknowledgements',
       },
       {
         text: '相关链接',
-        link: '/links/',
+        link: '/mcsl2/links/',
       },
       {
         text: '用户使用文档',
-        link: '/doc/user/',
+        link: '/mcsl2/doc/user/',
         collapsed: true,
         items: [
           {
             text: '快速上手',
-            link: '/doc/user/get-started',
+            link: '/mcsl2/doc/user/get-started',
           },
           {
             text: '配置服务器',
-            link: '/doc/user/configure-server',
+            link: '/mcsl2/doc/user/configure-server',
           },
           {
             text: '管理服务器',
-            link: '/doc/user/manage-server',
+            link: '/mcsl2/doc/user/manage-server',
           },
           {
             text: '下载资源',
-            link: '/doc/user/downloads',
+            link: '/mcsl2/doc/user/downloads',
           },
           {
             text: '终端',
-            link: '/doc/user/console',
+            link: '/mcsl2/doc/user/console',
           },
           {
             text: '插件',
-            link: '/doc/user/plugins',
+            link: '/mcsl2/doc/user/plugins',
           },
         ]
       },
       {
         text: '开发文档',
-        link: '/doc/dev/',
+        link: '/mcsl2/doc/dev/',
         collapsed: true,
         items: [
           {
             text: '下载模块',
-            link: '/doc/dev/downloads',
+            link: '/mcsl2/doc/dev/downloads',
           },
           {
             text: '插件开发',
-            link: '/doc/dev/plugins',
+            link: '/mcsl2/doc/dev/plugins',
           },
         ]
       },
       {
         text: "更新日志",
-        link: "/update-log/",
+        link: "/mcsl2/update-log/",
         collapsed: true,
         items: [
           {
             text: "v2.2.6.0",
-            link: "/update-log/",
+            link: "/mcsl2/update-log/",
           },
           {
             text: "v2.2.5.1",
-            link: "/update-log/v2.2.5.1",
+            link: "/mcsl2/update-log/v2.2.5.1",
           },
           {
             text: "v2.2.5.0",
-            link: "/update-log/v2.2.5.0",
+            link: "/mcsl2/update-log/v2.2.5.0",
           },
           {
             text: "v2.2.4.1",
-            link: "/update-log/v2.2.4.1",
+            link: "/mcsl2/update-log/v2.2.4.1",
           },
           {
             text: "v2.2.4.0",
-            link: "/update-log/v2.2.4.0",
+            link: "/mcsl2/update-log/v2.2.4.0",
           },
           {
             text: "v2.2.3.8 [测试版]",
-            link: "/update-log/v2.2.3.8",
+            link: "/mcsl2/update-log/v2.2.3.8",
           },
           {
             text: "v2.2.3.5 [测试版]",
-            link: "/update-log/v2.2.3.5",
+            link: "/mcsl2/update-log/v2.2.3.5",
           },
           {
             text: "v2.2.3.3 [测试版]",
-            link: "/update-log/v2.2.3.3",
+            link: "/mcsl2/update-log/v2.2.3.3",
           },
           {
             text: "v2.2.3.1 [热修复]",
-            link: "/update-log/v2.2.3.1",
+            link: "/mcsl2/update-log/v2.2.3.1",
           },
           {
             text: "v2.2.2.4",
-            link: "/update-log/v2.2.2.4",
+            link: "/mcsl2/update-log/v2.2.2.4",
           },
           {
             text: "v2.2.2.3",
-            link: "/update-log/v2.2.2.3",
+            link: "/mcsl2/update-log/v2.2.2.3",
           },
           {
             text: "v2.2.2.2",
-            link: "/update-log/v2.2.2.2",
+            link: "/mcsl2/update-log/v2.2.2.2",
           },
           {
             text: "v2.2.2.1",
-            link: "/update-log/v2.2.2.1",
+            link: "/mcsl2/update-log/v2.2.2.1",
           },
           {
             text: "v2.2.2.0",
-            link: "/update-log/v2.2.2.0",
+            link: "/mcsl2/update-log/v2.2.2.0",
           },
           {
             text: "v2.2.1.2",
-            link: "/update-log/v2.2.1.2",
+            link: "/mcsl2/update-log/v2.2.1.2",
           },
           {
             text: "v2.2.1.1",
-            link: "/update-log/v2.2.1.1",
+            link: "/mcsl2/update-log/v2.2.1.1",
           },
           {
             text: "v2.2.1.0",
-            link: "/update-log/v2.2.1.0",
+            link: "/mcsl2/update-log/v2.2.1.0",
           },
           {
             text: "v2.2.0.1",
-            link: "/update-log/v2.2.0.1",
+            link: "/mcsl2/update-log/v2.2.0.1",
           },
           {
             text: "v2.2.0.0",
-            link: "/update-log/v2.2.0.0",
+            link: "/mcsl2/update-log/v2.2.0.0",
           },
           {
             text: "v2.1.3.8",
-            link: "/update-log/v2.1.3.8",
+            link: "/mcsl2/update-log/v2.1.3.8",
           },
           {
             text: "v2.1.3.7",
-            link: "/update-log/v2.1.3.7",
+            link: "/mcsl2/update-log/v2.1.3.7",
           },
           {
             text: "v2.1.3.5",
-            link: "/update-log/v2.1.3.5",
+            link: "/mcsl2/update-log/v2.1.3.5",
           },
           {
             text: "v2.1.3-230515-0005",
-            link: "/update-log/v2.1.3-230515-0005",
+            link: "/mcsl2/update-log/v2.1.3-230515-0005",
           },
           {
             text: "v2.1.3-230514-0033",
-            link: "/update-log/v2.1.3-230514-0033",
+            link: "/mcsl2/update-log/v2.1.3-230514-0033",
           },
           {
             text: "v2.1.3-230512-2204",
-            link: "/update-log/v2.1.3-230512-2204",
+            link: "/mcsl2/update-log/v2.1.3-230512-2204",
           },
           {
             text: "v2.0 [Demo]",
-            link: "/update-log/v2.0",
+            link: "/mcsl2/update-log/v2.0",
           },
           {
             text: "v1.3",
-            link: "/update-log/v1.3",
+            link: "/mcsl2/update-log/v1.3",
           },
           {
             text: "v1.2",
-            link: "/update-log/v1.2",
+            link: "/mcsl2/update-log/v1.2",
           },
           {
             text: "v1.1",
-            link: "/update-log/v1.1",
+            link: "/mcsl2/update-log/v1.1",
           },
           {
             text: "v1.0",
-            link: "/update-log/v1.0",
+            link: "/mcsl2/update-log/v1.0",
           }
         ]
       },
       {
         text: "乐子风林水起",
-        link: "/flsq/",
+        link: "/mcsl2/flsq/",
         collapsed: true,
         items: [
           {
             text: "第一传",
-            link: "/flsq/",
+            link: "/mcsl2/flsq/",
           },
           {
             text: "续作",
-            link: "/flsq/fuckFLSQ_2nd",
+            link: "/mcsl2/flsq/fuckFLSQ_2nd",
           }
         ]
       },
       {
         text: "乐子YML3启动器",
-        link: "/yml3/",
+        link: "/mcsl2/yml3/",
       },
 
     ],
     footer: {
-      message: '「MCServerLauncher 2 软件」已进行中华人民共和国计算机软件著作权登记，一切侵权行为将依法追究。<br>计算机软件著作权登记号: <a href="https://www.ccopyright.com.cn/">2024SR0343868</a><br>网站ICP备案号: <a href="https://beian.miit.gov.cn/">鲁 ICP 备 2023001164 号 - 2</a><br>本站由 <a href="https://idc.jyywl.com/">玖壹云互联</a> 提供 CDN 加速与防御支持。',
+      message: '「MCServerLauncher 2 软件」已进行中华人民共和国计算机软件著作权登记，一切侵权行为将依法追究。<br>计算机软件著作权登记号: <a href="https://www.ccopyright.com.cn/">2024SR0343868</a><br>网站ICP备案号: <a href="https://beian.miit.gov.cn/">鲁 ICP 备 2023001164 号 - 2</a>',
       copyright: '&copy 2022 - 2024 MCSL开发组 保留所有权利。'
     },
     socialLinks: [
