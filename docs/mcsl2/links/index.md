@@ -16,7 +16,7 @@
 
 [波比网络](https://www.blbi.cn/)  
 
-[玖壹云互联 - 简约而不简单](https://idc.jyywl.com/)  
+[云海科技](https://idc.jyywl.com/)  
 
 [Frp 内网穿透联盟](https://内网穿透.中国/)  
 
