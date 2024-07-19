@@ -10,6 +10,7 @@ export default defineConfig({
   lang: "zh-CN",
   title: 'MCServerLauncher 2',
   description: '一个简洁、全能的Minecraft开服器',
+  srcDir: 'docs',
   head: [['link', { rel: 'icon', href: 'https://img.fastmirror.net/s/2023/12/03/656c4416b04b8.png' }]],
   markdown: {
     config: (md) => {
