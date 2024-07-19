@@ -103,7 +103,6 @@ dist
 
 # vuepress v2.x temp and cache directory
 .temp
-.cache
 
 # Docusaurus cache and generated files
 .docusaurus
@@ -145,7 +144,6 @@ vite.config.ts.timestamp*
 node_modules
 dist-ssr
 *.local
-.lightly
 
 # macOS
 .DS_Store
