@@ -5,10 +5,10 @@ jobs:
   Build:
     runs-on: ubuntu-latest
     steps:
-      - name: ⏰Set time zone
+      - name: Set TZ
         uses: szenius/set-timezone@v1.0
         with:
-          timezoneLinux: 'Asia/Shanghai'
+          timezoneLinux: "Asia/Shanghai"
 
       - name: Check out Git Repository
         uses: actions/checkout@v3
@@ -16,11 +16,11 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
-      
+          node-version: "18"
+
       - name: Install 7z
         run: sudo apt install p7zip-full -y
-      
+
       - name: Cache NPM Dependencies
         uses: actions/cache@v2
         with:
@@ -28,16 +28,16 @@ jobs:
           key: ${{ runner.OS }}-npm-cache
           restore-keys: |
             ${{ runner.OS }}-npm-cache
-            
+
       - name: Install Dependencies
         run: yarn install
-        
+
       - name: Build
         run: yarn run docs:build
-      
+
       - name: Compress Release Assets
-        run: 7z a -r MCSLWebsite.zip ./docs/.vitepress/dist/*
-      
+        run: 7z a -r MCSLWebsite.zip ./.vitepress/dist/*
+
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
